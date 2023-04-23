@@ -57,7 +57,7 @@ function appendItemToAddToList(item){
     newEl.addEventListener("click", function(){
         //console.log(itemId)
         let exactLocationOfItemInDb = ref(database, `addToList/${itemId}`)
-        this.remove(exactLocationOfItemInDb)
+        remove(exactLocationOfItemInDb)
     })
     addToListEl.append(newEl)
 }
